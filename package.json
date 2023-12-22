@@ -1,0 +1,27 @@
+{
+  "name": "scarpet-parser",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "",
+  "main": "dist/lib.js",
+  "scripts": {
+    "docs": "jsdoc lib/*.js",
+    "format": "prettier --write \"{src,test}/*.js\"",
+    "lint": "eslint --fix **/*.js",
+    "build": "tsc",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "Federico Carboni",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "^2.29.1",
+    "jsdoc": "^4.0.2",
+    "mocha": "^10.2.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  }
+}
