@@ -17,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/mocha": "^10.0.6",
+    "@types/node": "^20.10.5",
     "eslint": "^8.56.0",
     "eslint-plugin-import": "^2.29.1",
     "jsdoc": "^4.0.2",
