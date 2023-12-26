@@ -2,8 +2,12 @@ import {Tokenizer} from '../lib/Tokenizer.js';
 
 describe('Tokenizer', () => {
     it('should work', () => {
-        const tokenizer = new Tokenizer(`\
-2e100;
+        const tokenizer = new Tokenizer(
+            `\
+2e-2;
+// hello
+// line 2
+// line 3
 global_markers = [];
 {};
 activate() ->
@@ -24,10 +28,12 @@ activate() ->
         marker
     )
 );
-`, {
-            allowComments: true,
-            allowNewLineMarkers: false,
-        });
+`,
+            {
+                allowComments: true,
+                allowNewLineMarkers: false,
+            },
+        );
         let token;
         while ((token = tokenizer.nextToken()) !== null) {
             console.log(token);

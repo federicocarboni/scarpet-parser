@@ -1,0 +1,74 @@
+{
+  "errors": [],
+  "warnings": [],
+  "root": {
+    "kind": "BinaryExpression",
+    "start": {
+      "pos": 15,
+      "row": 0,
+      "col": 0
+    },
+    "end": {
+      "pos": 106,
+      "row": 5,
+      "col": 0
+    },
+    "operator": ";",
+    "lvalue": {
+      "kind": "BinaryExpression",
+      "start": {
+        "pos": 15,
+        "row": 0,
+        "col": 0
+      },
+      "end": {
+        "pos": 72,
+        "row": 1,
+        "col": 0
+      },
+      "operator": ";",
+      "lvalue": {
+        "kind": "StringLiteral",
+        "start": {
+          "pos": 15,
+          "row": 0,
+          "col": 0
+        },
+        "end": {
+          "pos": 29,
+          "row": 0,
+          "col": 0
+        },
+        "value": "plain string"
+      },
+      "rvalue": {
+        "kind": "StringLiteral",
+        "start": {
+          "pos": 31,
+          "row": 1,
+          "col": 0
+        },
+        "end": {
+          "pos": 72,
+          "row": 1,
+          "col": 0
+        },
+        "value": "escape sequences \n \t ' \\ plain text"
+      }
+    },
+    "rvalue": {
+      "kind": "StringLiteral",
+      "start": {
+        "pos": 74,
+        "row": 2,
+        "col": 0
+      },
+      "end": {
+        "pos": 106,
+        "row": 5,
+        "col": 0
+      },
+      "value": "string\nspanning\nmultiple\nlines"
+    }
+  }
+}

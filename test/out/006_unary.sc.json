@@ -1,0 +1,88 @@
+{
+  "errors": [],
+  "warnings": [],
+  "root": {
+    "kind": "BinaryExpression",
+    "start": {
+      "pos": 34,
+      "row": 0,
+      "col": 0
+    },
+    "end": {
+      "pos": 50,
+      "row": 0,
+      "col": 0
+    },
+    "operator": "&&",
+    "lvalue": {
+      "kind": "UnaryExpression",
+      "start": {
+        "pos": 34,
+        "row": 0,
+        "col": 0
+      },
+      "end": {
+        "pos": 43,
+        "row": 0,
+        "col": 0
+      },
+      "operator": "!",
+      "value": {
+        "kind": "BinaryExpression",
+        "start": {
+          "pos": 35,
+          "row": 0,
+          "col": 0
+        },
+        "end": {
+          "pos": 43,
+          "row": 0,
+          "col": 0
+        },
+        "operator": ":",
+        "lvalue": {
+          "kind": "Variable",
+          "start": {
+            "pos": 35,
+            "row": 0,
+            "col": 0
+          },
+          "end": {
+            "pos": 37,
+            "row": 0,
+            "col": 0
+          },
+          "name": "id"
+        },
+        "rvalue": {
+          "kind": "Variable",
+          "start": {
+            "pos": 38,
+            "row": 0,
+            "col": 0
+          },
+          "end": {
+            "pos": 43,
+            "row": 0,
+            "col": 0
+          },
+          "name": "attr"
+        }
+      }
+    },
+    "rvalue": {
+      "kind": "Constant",
+      "start": {
+        "pos": 46,
+        "row": 0,
+        "col": 0
+      },
+      "end": {
+        "pos": 50,
+        "row": 0,
+        "col": 0
+      },
+      "name": "true"
+    }
+  }
+}

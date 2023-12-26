@@ -1,0 +1,102 @@
+{
+  "errors": [],
+  "warnings": [],
+  "root": {
+    "kind": "BinaryExpression",
+    "start": {
+      "pos": 35,
+      "row": 0,
+      "col": 0
+    },
+    "end": {
+      "pos": 48,
+      "row": 0,
+      "col": 0
+    },
+    "operator": "+",
+    "lvalue": {
+      "kind": "NumberLiteral",
+      "start": {
+        "pos": 35,
+        "row": 0,
+        "col": 0
+      },
+      "end": {
+        "pos": 36,
+        "row": 0,
+        "col": 0
+      },
+      "value": "1"
+    },
+    "rvalue": {
+      "kind": "BinaryExpression",
+      "start": {
+        "pos": 39,
+        "row": 0,
+        "col": 0
+      },
+      "end": {
+        "pos": 48,
+        "row": 0,
+        "col": 0
+      },
+      "operator": "*",
+      "lvalue": {
+        "kind": "NumberLiteral",
+        "start": {
+          "pos": 39,
+          "row": 0,
+          "col": 0
+        },
+        "end": {
+          "pos": 40,
+          "row": 0,
+          "col": 0
+        },
+        "value": "2"
+      },
+      "rvalue": {
+        "kind": "BinaryExpression",
+        "start": {
+          "pos": 43,
+          "row": 0,
+          "col": 0
+        },
+        "end": {
+          "pos": 48,
+          "row": 0,
+          "col": 0
+        },
+        "operator": "^",
+        "lvalue": {
+          "kind": "NumberLiteral",
+          "start": {
+            "pos": 43,
+            "row": 0,
+            "col": 0
+          },
+          "end": {
+            "pos": 44,
+            "row": 0,
+            "col": 0
+          },
+          "value": "3"
+        },
+        "rvalue": {
+          "kind": "NumberLiteral",
+          "start": {
+            "pos": 47,
+            "row": 0,
+            "col": 0
+          },
+          "end": {
+            "pos": 48,
+            "row": 0,
+            "col": 0
+          },
+          "value": "4"
+        }
+      }
+    }
+  }
+}

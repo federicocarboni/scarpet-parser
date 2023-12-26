@@ -1,0 +1,130 @@
+{
+  "errors": [],
+  "warnings": [],
+  "root": {
+    "kind": "BinaryExpression",
+    "start": {
+      "pos": 4,
+      "row": 0,
+      "col": 0
+    },
+    "end": {
+      "pos": 28,
+      "row": 0,
+      "col": 0
+    },
+    "operator": ";",
+    "lvalue": {
+      "kind": "BinaryExpression",
+      "start": {
+        "pos": 4,
+        "row": 0,
+        "col": 0
+      },
+      "end": {
+        "pos": 22,
+        "row": 0,
+        "col": 0
+      },
+      "operator": ";",
+      "lvalue": {
+        "kind": "BinaryExpression",
+        "start": {
+          "pos": 4,
+          "row": 0,
+          "col": 0
+        },
+        "end": {
+          "pos": 17,
+          "row": 0,
+          "col": 0
+        },
+        "operator": ";",
+        "lvalue": {
+          "kind": "BinaryExpression",
+          "start": {
+            "pos": 4,
+            "row": 0,
+            "col": 0
+          },
+          "end": {
+            "pos": 12,
+            "row": 0,
+            "col": 0
+          },
+          "operator": ";",
+          "lvalue": {
+            "kind": "Constant",
+            "start": {
+              "pos": 4,
+              "row": 0,
+              "col": 0
+            },
+            "end": {
+              "pos": 9,
+              "row": 0,
+              "col": 0
+            },
+            "name": "euler"
+          },
+          "rvalue": {
+            "kind": "Constant",
+            "start": {
+              "pos": 10,
+              "row": 0,
+              "col": 0
+            },
+            "end": {
+              "pos": 12,
+              "row": 0,
+              "col": 0
+            },
+            "name": "pi"
+          }
+        },
+        "rvalue": {
+          "kind": "Constant",
+          "start": {
+            "pos": 13,
+            "row": 0,
+            "col": 0
+          },
+          "end": {
+            "pos": 17,
+            "row": 0,
+            "col": 0
+          },
+          "name": "null"
+        }
+      },
+      "rvalue": {
+        "kind": "Constant",
+        "start": {
+          "pos": 18,
+          "row": 0,
+          "col": 0
+        },
+        "end": {
+          "pos": 22,
+          "row": 0,
+          "col": 0
+        },
+        "name": "true"
+      }
+    },
+    "rvalue": {
+      "kind": "Constant",
+      "start": {
+        "pos": 23,
+        "row": 0,
+        "col": 0
+      },
+      "end": {
+        "pos": 28,
+        "row": 0,
+        "col": 0
+      },
+      "name": "false"
+    }
+  }
+}
