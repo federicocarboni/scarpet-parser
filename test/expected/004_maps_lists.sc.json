@@ -1,0 +1,270 @@
+{
+    "errors": [],
+    "warnings": [
+        {
+            "diagnostic": 10,
+            "start": {
+                "pos": 72,
+                "row": 5,
+                "col": 1
+            },
+            "end": {
+                "pos": 73,
+                "row": 5,
+                "col": 2
+            }
+        },
+        {
+            "diagnostic": 10,
+            "start": {
+                "pos": 105,
+                "row": 9,
+                "col": 1
+            },
+            "end": {
+                "pos": 106,
+                "row": 9,
+                "col": 2
+            }
+        }
+    ],
+    "root": {
+        "kind": "BinaryExpression",
+        "start": {
+            "pos": 18,
+            "row": 1,
+            "col": 0
+        },
+        "end": {
+            "pos": 107,
+            "row": 9,
+            "col": 3
+        },
+        "operator": ";",
+        "lvalue": {
+            "kind": "BinaryExpression",
+            "start": {
+                "pos": 18,
+                "row": 1,
+                "col": 0
+            },
+            "end": {
+                "pos": 106,
+                "row": 9,
+                "col": 2
+            },
+            "operator": ";",
+            "lvalue": {
+                "kind": "BinaryExpression",
+                "start": {
+                    "pos": 18,
+                    "row": 1,
+                    "col": 0
+                },
+                "end": {
+                    "pos": 102,
+                    "row": 8,
+                    "col": 1
+                },
+                "operator": ";",
+                "lvalue": {
+                    "kind": "BinaryExpression",
+                    "start": {
+                        "pos": 18,
+                        "row": 1,
+                        "col": 0
+                    },
+                    "end": {
+                        "pos": 73,
+                        "row": 5,
+                        "col": 2
+                    },
+                    "operator": ";",
+                    "lvalue": {
+                        "kind": "MapLiteral",
+                        "start": {
+                            "pos": 18,
+                            "row": 1,
+                            "col": 0
+                        },
+                        "end": {
+                            "pos": 69,
+                            "row": 4,
+                            "col": 1
+                        },
+                        "values": [
+                            {
+                                "kind": "BinaryExpression",
+                                "start": {
+                                    "pos": 24,
+                                    "row": 2,
+                                    "col": 4
+                                },
+                                "end": {
+                                    "pos": 42,
+                                    "row": 2,
+                                    "col": 22
+                                },
+                                "operator": "->",
+                                "lvalue": {
+                                    "kind": "StringLiteral",
+                                    "start": {
+                                        "pos": 24,
+                                        "row": 2,
+                                        "col": 4
+                                    },
+                                    "end": {
+                                        "pos": 30,
+                                        "row": 2,
+                                        "col": 10
+                                    },
+                                    "value": "key1"
+                                },
+                                "rvalue": {
+                                    "kind": "StringLiteral",
+                                    "start": {
+                                        "pos": 34,
+                                        "row": 2,
+                                        "col": 14
+                                    },
+                                    "end": {
+                                        "pos": 42,
+                                        "row": 2,
+                                        "col": 22
+                                    },
+                                    "value": "value1"
+                                },
+                                "comment": null
+                            },
+                            {
+                                "kind": "BinaryExpression",
+                                "start": {
+                                    "pos": 48,
+                                    "row": 3,
+                                    "col": 4
+                                },
+                                "end": {
+                                    "pos": 66,
+                                    "row": 3,
+                                    "col": 22
+                                },
+                                "operator": "->",
+                                "lvalue": {
+                                    "kind": "StringLiteral",
+                                    "start": {
+                                        "pos": 48,
+                                        "row": 3,
+                                        "col": 4
+                                    },
+                                    "end": {
+                                        "pos": 54,
+                                        "row": 3,
+                                        "col": 10
+                                    },
+                                    "value": "key2"
+                                },
+                                "rvalue": {
+                                    "kind": "StringLiteral",
+                                    "start": {
+                                        "pos": 58,
+                                        "row": 3,
+                                        "col": 14
+                                    },
+                                    "end": {
+                                        "pos": 66,
+                                        "row": 3,
+                                        "col": 22
+                                    },
+                                    "value": "value2"
+                                },
+                                "comment": null
+                            },
+                            null
+                        ]
+                    },
+                    "rvalue": {
+                        "kind": "MapLiteral",
+                        "start": {
+                            "pos": 71,
+                            "row": 5,
+                            "col": 0
+                        },
+                        "end": {
+                            "pos": 73,
+                            "row": 5,
+                            "col": 2
+                        },
+                        "values": [
+                            null
+                        ]
+                    },
+                    "comment": null
+                },
+                "rvalue": {
+                    "kind": "ListLiteral",
+                    "start": {
+                        "pos": 75,
+                        "row": 6,
+                        "col": 0
+                    },
+                    "end": {
+                        "pos": 102,
+                        "row": 8,
+                        "col": 1
+                    },
+                    "values": [
+                        {
+                            "kind": "StringLiteral",
+                            "start": {
+                                "pos": 81,
+                                "row": 7,
+                                "col": 4
+                            },
+                            "end": {
+                                "pos": 89,
+                                "row": 7,
+                                "col": 12
+                            },
+                            "value": "value1"
+                        },
+                        {
+                            "kind": "StringLiteral",
+                            "start": {
+                                "pos": 91,
+                                "row": 7,
+                                "col": 14
+                            },
+                            "end": {
+                                "pos": 99,
+                                "row": 7,
+                                "col": 22
+                            },
+                            "value": "value2"
+                        },
+                        null
+                    ]
+                },
+                "comment": null
+            },
+            "rvalue": {
+                "kind": "ListLiteral",
+                "start": {
+                    "pos": 104,
+                    "row": 9,
+                    "col": 0
+                },
+                "end": {
+                    "pos": 106,
+                    "row": 9,
+                    "col": 2
+                },
+                "values": [
+                    null
+                ]
+            },
+            "comment": null
+        },
+        "rvalue": null,
+        "comment": null
+    }
+}

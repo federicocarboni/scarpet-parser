@@ -1,0 +1,90 @@
+{
+    "errors": [],
+    "warnings": [],
+    "root": {
+        "kind": "BinaryExpression",
+        "start": {
+            "pos": 34,
+            "row": 1,
+            "col": 0
+        },
+        "end": {
+            "pos": 50,
+            "row": 1,
+            "col": 16
+        },
+        "operator": "&&",
+        "lvalue": {
+            "kind": "UnaryExpression",
+            "start": {
+                "pos": 34,
+                "row": 1,
+                "col": 0
+            },
+            "end": {
+                "pos": 43,
+                "row": 1,
+                "col": 9
+            },
+            "operator": "!",
+            "value": {
+                "kind": "BinaryExpression",
+                "start": {
+                    "pos": 35,
+                    "row": 1,
+                    "col": 1
+                },
+                "end": {
+                    "pos": 43,
+                    "row": 1,
+                    "col": 9
+                },
+                "operator": ":",
+                "lvalue": {
+                    "kind": "Variable",
+                    "start": {
+                        "pos": 35,
+                        "row": 1,
+                        "col": 1
+                    },
+                    "end": {
+                        "pos": 37,
+                        "row": 1,
+                        "col": 3
+                    },
+                    "name": "id"
+                },
+                "rvalue": {
+                    "kind": "Variable",
+                    "start": {
+                        "pos": 38,
+                        "row": 1,
+                        "col": 4
+                    },
+                    "end": {
+                        "pos": 43,
+                        "row": 1,
+                        "col": 9
+                    },
+                    "name": "attr"
+                },
+                "comment": "// Unary Operator precedence test\n"
+            }
+        },
+        "rvalue": {
+            "kind": "Constant",
+            "start": {
+                "pos": 46,
+                "row": 1,
+                "col": 12
+            },
+            "end": {
+                "pos": 50,
+                "row": 1,
+                "col": 16
+            },
+            "name": "true"
+        },
+        "comment": "// Unary Operator precedence test\n"
+    }
+}

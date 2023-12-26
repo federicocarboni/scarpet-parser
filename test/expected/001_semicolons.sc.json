@@ -1,0 +1,216 @@
+{
+    "errors": [],
+    "warnings": [],
+    "root": {
+        "kind": "BinaryExpression",
+        "start": {
+            "pos": 37,
+            "row": 1,
+            "col": 0
+        },
+        "end": {
+            "pos": 92,
+            "row": 9,
+            "col": 2
+        },
+        "operator": ";",
+        "lvalue": {
+            "kind": "BinaryExpression",
+            "start": {
+                "pos": 37,
+                "row": 1,
+                "col": 0
+            },
+            "end": {
+                "pos": 91,
+                "row": 9,
+                "col": 1
+            },
+            "operator": ";",
+            "lvalue": {
+                "kind": "ParenthesisedExpression",
+                "start": {
+                    "pos": 37,
+                    "row": 1,
+                    "col": 0
+                },
+                "end": {
+                    "pos": 62,
+                    "row": 4,
+                    "col": 1
+                },
+                "value": {
+                    "kind": "BinaryExpression",
+                    "start": {
+                        "pos": 43,
+                        "row": 2,
+                        "col": 4
+                    },
+                    "end": {
+                        "pos": 60,
+                        "row": 3,
+                        "col": 11
+                    },
+                    "operator": ";",
+                    "lvalue": {
+                        "kind": "BinaryExpression",
+                        "start": {
+                            "pos": 43,
+                            "row": 2,
+                            "col": 4
+                        },
+                        "end": {
+                            "pos": 59,
+                            "row": 3,
+                            "col": 10
+                        },
+                        "operator": ";",
+                        "lvalue": {
+                            "kind": "BinaryExpression",
+                            "start": {
+                                "pos": 43,
+                                "row": 2,
+                                "col": 4
+                            },
+                            "end": {
+                                "pos": 58,
+                                "row": 3,
+                                "col": 9
+                            },
+                            "operator": ";",
+                            "lvalue": {
+                                "kind": "BinaryExpression",
+                                "start": {
+                                    "pos": 43,
+                                    "row": 2,
+                                    "col": 4
+                                },
+                                "end": {
+                                    "pos": 57,
+                                    "row": 3,
+                                    "col": 8
+                                },
+                                "operator": ";",
+                                "lvalue": {
+                                    "kind": "Constant",
+                                    "start": {
+                                        "pos": 43,
+                                        "row": 2,
+                                        "col": 4
+                                    },
+                                    "end": {
+                                        "pos": 47,
+                                        "row": 2,
+                                        "col": 8
+                                    },
+                                    "name": "null"
+                                },
+                                "rvalue": {
+                                    "kind": "Constant",
+                                    "start": {
+                                        "pos": 53,
+                                        "row": 3,
+                                        "col": 4
+                                    },
+                                    "end": {
+                                        "pos": 57,
+                                        "row": 3,
+                                        "col": 8
+                                    },
+                                    "name": "null"
+                                },
+                                "comment": null
+                            },
+                            "rvalue": null,
+                            "comment": null
+                        },
+                        "rvalue": null,
+                        "comment": null
+                    },
+                    "rvalue": null,
+                    "comment": null
+                }
+            },
+            "rvalue": {
+                "kind": "FunctionExpression",
+                "start": {
+                    "pos": 65,
+                    "row": 6,
+                    "col": 0
+                },
+                "end": {
+                    "pos": 91,
+                    "row": 9,
+                    "col": 1
+                },
+                "name": "f",
+                "params": [
+                    {
+                        "kind": "BinaryExpression",
+                        "start": {
+                            "pos": 72,
+                            "row": 7,
+                            "col": 4
+                        },
+                        "end": {
+                            "pos": 77,
+                            "row": 7,
+                            "col": 9
+                        },
+                        "operator": ";",
+                        "lvalue": {
+                            "kind": "Constant",
+                            "start": {
+                                "pos": 72,
+                                "row": 7,
+                                "col": 4
+                            },
+                            "end": {
+                                "pos": 76,
+                                "row": 7,
+                                "col": 8
+                            },
+                            "name": "null"
+                        },
+                        "rvalue": null,
+                        "comment": null
+                    },
+                    {
+                        "kind": "BinaryExpression",
+                        "start": {
+                            "pos": 83,
+                            "row": 8,
+                            "col": 4
+                        },
+                        "end": {
+                            "pos": 88,
+                            "row": 8,
+                            "col": 9
+                        },
+                        "operator": ";",
+                        "lvalue": {
+                            "kind": "Constant",
+                            "start": {
+                                "pos": 83,
+                                "row": 8,
+                                "col": 4
+                            },
+                            "end": {
+                                "pos": 87,
+                                "row": 8,
+                                "col": 8
+                            },
+                            "name": "null"
+                        },
+                        "rvalue": null,
+                        "comment": null
+                    },
+                    null
+                ]
+            },
+            "comment": null
+        },
+        "rvalue": null,
+        "comment": null
+    }
+}

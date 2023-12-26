@@ -1,0 +1,134 @@
+{
+    "errors": [],
+    "warnings": [],
+    "root": {
+        "kind": "BinaryExpression",
+        "start": {
+            "pos": 16,
+            "row": 1,
+            "col": 0
+        },
+        "end": {
+            "pos": 55,
+            "row": 5,
+            "col": 7
+        },
+        "operator": ";",
+        "lvalue": {
+            "kind": "BinaryExpression",
+            "start": {
+                "pos": 16,
+                "row": 1,
+                "col": 0
+            },
+            "end": {
+                "pos": 46,
+                "row": 4,
+                "col": 7
+            },
+            "operator": ";",
+            "lvalue": {
+                "kind": "BinaryExpression",
+                "start": {
+                    "pos": 16,
+                    "row": 1,
+                    "col": 0
+                },
+                "end": {
+                    "pos": 37,
+                    "row": 3,
+                    "col": 7
+                },
+                "operator": ";",
+                "lvalue": {
+                    "kind": "BinaryExpression",
+                    "start": {
+                        "pos": 16,
+                        "row": 1,
+                        "col": 0
+                    },
+                    "end": {
+                        "pos": 29,
+                        "row": 2,
+                        "col": 6
+                    },
+                    "operator": ";",
+                    "lvalue": {
+                        "kind": "NumberLiteral",
+                        "start": {
+                            "pos": 16,
+                            "row": 1,
+                            "col": 0
+                        },
+                        "end": {
+                            "pos": 21,
+                            "row": 1,
+                            "col": 5
+                        },
+                        "value": "12345"
+                    },
+                    "rvalue": {
+                        "kind": "NumberLiteral",
+                        "start": {
+                            "pos": 23,
+                            "row": 2,
+                            "col": 0
+                        },
+                        "end": {
+                            "pos": 29,
+                            "row": 2,
+                            "col": 6
+                        },
+                        "value": 123.45
+                    },
+                    "comment": "// Numbers test\n"
+                },
+                "rvalue": {
+                    "kind": "NumberLiteral",
+                    "start": {
+                        "pos": 31,
+                        "row": 3,
+                        "col": 0
+                    },
+                    "end": {
+                        "pos": 37,
+                        "row": 3,
+                        "col": 7
+                    },
+                    "value": "123000000000000"
+                },
+                "comment": null
+            },
+            "rvalue": {
+                "kind": "NumberLiteral",
+                "start": {
+                    "pos": 39,
+                    "row": 4,
+                    "col": 0
+                },
+                "end": {
+                    "pos": 46,
+                    "row": 4,
+                    "col": 7
+                },
+                "value": "123000000000000"
+            },
+            "comment": null
+        },
+        "rvalue": {
+            "kind": "NumberLiteral",
+            "start": {
+                "pos": 48,
+                "row": 5,
+                "col": 0
+            },
+            "end": {
+                "pos": 55,
+                "row": 5,
+                "col": 7
+            },
+            "value": 1.23e-10
+        },
+        "comment": null
+    }
+}

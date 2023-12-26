@@ -1,0 +1,147 @@
+{
+    "errors": [],
+    "warnings": [],
+    "root": {
+        "kind": "BinaryExpression",
+        "start": {
+            "pos": 35,
+            "row": 1,
+            "col": 0
+        },
+        "end": {
+            "pos": 54,
+            "row": 1,
+            "col": 19
+        },
+        "operator": "+",
+        "lvalue": {
+            "kind": "NumberLiteral",
+            "start": {
+                "pos": 35,
+                "row": 1,
+                "col": 0
+            },
+            "end": {
+                "pos": 36,
+                "row": 1,
+                "col": 1
+            },
+            "value": "1"
+        },
+        "rvalue": {
+            "kind": "BinaryExpression",
+            "start": {
+                "pos": 39,
+                "row": 1,
+                "col": 4
+            },
+            "end": {
+                "pos": 54,
+                "row": 1,
+                "col": 19
+            },
+            "operator": "*",
+            "lvalue": {
+                "kind": "ParenthesisedExpression",
+                "start": {
+                    "pos": 39,
+                    "row": 1,
+                    "col": 4
+                },
+                "end": {
+                    "pos": 46,
+                    "row": 1,
+                    "col": 11
+                },
+                "value": {
+                    "kind": "BinaryExpression",
+                    "start": {
+                        "pos": 40,
+                        "row": 1,
+                        "col": 5
+                    },
+                    "end": {
+                        "pos": 45,
+                        "row": 1,
+                        "col": 10
+                    },
+                    "operator": "+",
+                    "lvalue": {
+                        "kind": "NumberLiteral",
+                        "start": {
+                            "pos": 40,
+                            "row": 1,
+                            "col": 5
+                        },
+                        "end": {
+                            "pos": 41,
+                            "row": 1,
+                            "col": 6
+                        },
+                        "value": "2"
+                    },
+                    "rvalue": {
+                        "kind": "NumberLiteral",
+                        "start": {
+                            "pos": 44,
+                            "row": 1,
+                            "col": 9
+                        },
+                        "end": {
+                            "pos": 45,
+                            "row": 1,
+                            "col": 10
+                        },
+                        "value": "3"
+                    },
+                    "comment": "// Binary Operator precedence test\n"
+                }
+            },
+            "rvalue": {
+                "kind": "BinaryExpression",
+                "start": {
+                    "pos": 49,
+                    "row": 1,
+                    "col": 14
+                },
+                "end": {
+                    "pos": 54,
+                    "row": 1,
+                    "col": 19
+                },
+                "operator": "^",
+                "lvalue": {
+                    "kind": "NumberLiteral",
+                    "start": {
+                        "pos": 49,
+                        "row": 1,
+                        "col": 14
+                    },
+                    "end": {
+                        "pos": 50,
+                        "row": 1,
+                        "col": 15
+                    },
+                    "value": "4"
+                },
+                "rvalue": {
+                    "kind": "NumberLiteral",
+                    "start": {
+                        "pos": 53,
+                        "row": 1,
+                        "col": 18
+                    },
+                    "end": {
+                        "pos": 54,
+                        "row": 1,
+                        "col": 19
+                    },
+                    "value": "5"
+                },
+                "comment": "// Binary Operator precedence test\n"
+            },
+            "comment": "// Binary Operator precedence test\n"
+        },
+        "comment": "// Binary Operator precedence test\n"
+    }
+}
