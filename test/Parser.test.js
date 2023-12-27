@@ -1,27 +1,32 @@
-import {readFileSync, readdirSync, writeFileSync} from 'fs';
+import {readFileSync, readdirSync} from 'fs';
 import {Parser} from '../lib/Parser.js';
 import path from 'path';
 import assert from 'assert';
 
-function printNode(input, node) {
-    if (node === null) return;
-    console.log('---', input.slice(node.start.pos, node.end.pos));
-    switch (node.kind) {
-        case 'FunctionExpression':
-            for (const n of node.params) printNode(input, n);
-            break;
-        case 'BinaryExpression':
-            printNode(input, node.lvalue);
-            printNode(input, node.rvalue);
-            break;
-        case 'UnaryExpression':
-        case 'ParenthesisedExpression':
-            printNode(input, node.value);
-            break;
-        default:
-            break;
-    }
+// function printNode(input, node) {
+//     if (node === null) return;
+//     console.log('---', input.slice(node.start.pos, node.end.pos));
+//     switch (node.kind) {
+//         case 'FunctionExpression':
+//             for (const n of node.params) printNode(input, n);
+//             break;
+//         case 'BinaryExpression':
+//             printNode(input, node.lvalue);
+//             printNode(input, node.rvalue);
+//             break;
+//         case 'UnaryExpression':
+//         case 'ParenthesisedExpression':
+//             printNode(input, node.value);
+//             break;
+//         default:
+//             break;
+//     }
+// }
+
+const SOURCE = `\
+f(xyz, xyzx, ) -> (
 }
+`;
 
 describe('Parser', function () {
     this.timeout(5000000000000000);
@@ -55,16 +60,9 @@ describe('Parser', function () {
                 warnings: parser.warnings,
                 root,
             };
-            // writeFileSync(
-            //     path.join('test/expected/' + caseFile + '.json'),
-            //     JSON.stringify(
-            //         json,
-            //         (_, value) =>
-            //             typeof value === 'bigint' ? String(value) : value,
-            //         4,
-            //     ),
-            // );
             assert.deepStrictEqual(structuredClone(json), output);
         });
     }
+    it('formatting?', function () {
+    })
 });

@@ -11,6 +11,9 @@ devDependencies:
   '@types/node':
     specifier: ^20.10.5
     version: 20.10.5
+  '@unicode/unicode-13.0.0':
+    specifier: ^1.5.2
+    version: 1.5.2
   eslint:
     specifier: ^8.56.0
     version: 8.56.0
@@ -180,6 +183,10 @@ packages:
 
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+    dev: true
+
+  /@unicode/unicode-13.0.0@1.5.2:
+    resolution: {integrity: sha512-7vveo80Y2tISms1ytUi03zMcayN784pyz+6MBJZ4Yhqhm39+MDM//MKBeNq2XKQog+ev2U33LaUh1EzXxiPO0A==}
     dev: true
 
   /acorn-jsx@5.3.2(acorn@8.11.2):
