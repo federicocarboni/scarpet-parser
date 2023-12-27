@@ -1,0 +1,229 @@
+{
+  "errors": [],
+  "warnings": [],
+  "root": {
+    "kind": "BinaryExpression",
+    "operator": ";",
+    "lvalue": {
+      "kind": "BinaryExpression",
+      "operator": ";",
+      "lvalue": {
+        "kind": "BinaryExpression",
+        "operator": ";",
+        "lvalue": {
+          "kind": "BinaryExpression",
+          "operator": ">=",
+          "lvalue": {
+            "kind": "NumberLiteral",
+            "literal": "1",
+            "value": "1",
+            "start": {
+              "pos": 24,
+              "row": 1,
+              "col": 0
+            },
+            "end": {
+              "pos": 25,
+              "row": 1,
+              "col": 1
+            }
+          },
+          "rvalue": {
+            "kind": "NumberLiteral",
+            "literal": "2",
+            "value": "2",
+            "start": {
+              "pos": 29,
+              "row": 1,
+              "col": 5
+            },
+            "end": {
+              "pos": 30,
+              "row": 1,
+              "col": 6
+            }
+          },
+          "comment": "// Comparison operators\n",
+          "start": {
+            "pos": 24,
+            "row": 1,
+            "col": 0
+          },
+          "end": {
+            "pos": 30,
+            "row": 1,
+            "col": 6
+          }
+        },
+        "rvalue": {
+          "kind": "BinaryExpression",
+          "operator": ">",
+          "lvalue": {
+            "kind": "NumberLiteral",
+            "literal": "3",
+            "value": "3",
+            "start": {
+              "pos": 32,
+              "row": 2,
+              "col": 0
+            },
+            "end": {
+              "pos": 33,
+              "row": 2,
+              "col": 1
+            }
+          },
+          "rvalue": {
+            "kind": "NumberLiteral",
+            "literal": "4",
+            "value": "4",
+            "start": {
+              "pos": 36,
+              "row": 2,
+              "col": 4
+            },
+            "end": {
+              "pos": 37,
+              "row": 2,
+              "col": 5
+            }
+          },
+          "comment": null,
+          "start": {
+            "pos": 32,
+            "row": 2,
+            "col": 0
+          },
+          "end": {
+            "pos": 37,
+            "row": 2,
+            "col": 5
+          }
+        },
+        "comment": "// Comparison operators\n",
+        "start": {
+          "pos": 24,
+          "row": 1,
+          "col": 0
+        },
+        "end": {
+          "pos": 37,
+          "row": 2,
+          "col": 5
+        }
+      },
+      "rvalue": {
+        "kind": "BinaryExpression",
+        "operator": "<=",
+        "lvalue": {
+          "kind": "NumberLiteral",
+          "literal": "5",
+          "value": "5",
+          "start": {
+            "pos": 39,
+            "row": 3,
+            "col": 0
+          },
+          "end": {
+            "pos": 40,
+            "row": 3,
+            "col": 1
+          }
+        },
+        "rvalue": {
+          "kind": "NumberLiteral",
+          "literal": "6",
+          "value": "6",
+          "start": {
+            "pos": 44,
+            "row": 3,
+            "col": 5
+          },
+          "end": {
+            "pos": 45,
+            "row": 3,
+            "col": 6
+          }
+        },
+        "comment": null,
+        "start": {
+          "pos": 39,
+          "row": 3,
+          "col": 0
+        },
+        "end": {
+          "pos": 45,
+          "row": 3,
+          "col": 6
+        }
+      },
+      "comment": null,
+      "start": {
+        "pos": 24,
+        "row": 1,
+        "col": 0
+      },
+      "end": {
+        "pos": 45,
+        "row": 3,
+        "col": 6
+      }
+    },
+    "rvalue": {
+      "kind": "BinaryExpression",
+      "operator": "<",
+      "lvalue": {
+        "kind": "NumberLiteral",
+        "literal": "7",
+        "value": "7",
+        "start": {
+          "pos": 47,
+          "row": 4,
+          "col": 0
+        },
+        "end": {
+          "pos": 48,
+          "row": 4,
+          "col": 1
+        }
+      },
+      "rvalue": {
+        "kind": "NumberLiteral",
+        "literal": "8",
+        "value": "8",
+        "start": {
+          "pos": 51,
+          "row": 4,
+          "col": 4
+        },
+        "end": {
+          "pos": 52,
+          "row": 4,
+          "col": 5
+        }
+      },
+      "comment": null,
+      "start": {
+        "pos": 47,
+        "row": 4,
+        "col": 0
+      },
+      "end": {
+        "pos": 52,
+        "row": 4,
+        "col": 5
+      }
+    },
+    "comment": null,
+    "start": {
+      "pos": 24,
+      "row": 1,
+      "col": 0
+    },
+    "end": {
+      "pos": 52,
+      "row": 4,
+      "col": 5
+    }
+  }
+}

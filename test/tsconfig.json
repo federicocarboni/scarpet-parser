@@ -4,7 +4,8 @@
         "rootDir": "..",
         "emitDeclarationOnly": false,
         "noEmit": true,
-        "types": ["mocha", "node"]
+        "types": ["mocha", "node"],
+        "esModuleInterop": true
     },
     "include": ["."]
 }
