@@ -5,12 +5,13 @@
   "type": "module",
   "description": "",
   "main": "lib/lib.js",
+  "types": "types/lib.d.ts",
   "scripts": {
     "docs": "jsdoc -c jsdoc.json lib/*.js",
     "format": "prettier --write \"{src,test}/*.js\"",
     "lint": "eslint --fix **/*.js",
     "genUnicodeData": "node scripts/genUnicodeData.cjs",
-    "build": "tsc",
+    "install": "tsc",
     "test": "mocha",
     "coverage": "c8 npm test"
   },
