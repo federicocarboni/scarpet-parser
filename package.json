@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "description": "",
-  "main": "dist/lib.js",
+  "main": "lib/lib.js",
   "scripts": {
     "docs": "jsdoc -c jsdoc.json lib/*.js",
     "format": "prettier --write \"{src,test}/*.js\"",
