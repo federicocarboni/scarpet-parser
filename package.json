@@ -7,8 +7,8 @@
   "main": "lib/lib.js",
   "types": "types/lib.d.ts",
   "scripts": {
-    "docs": "jsdoc -c jsdoc.json lib/*.js",
-    "format": "prettier --write \"{src,test}/*.js\"",
+    "docs": "typedoc lib/lib.js",
+    "format": "prettier --write \"**/*.{js,cjs}\"",
     "lint": "eslint --fix **/*.js",
     "genUnicodeData": "node scripts/genUnicodeData.cjs",
     "install": "tsc",
@@ -25,9 +25,10 @@
     "c8": "^8.0.1",
     "eslint": "^8.56.0",
     "eslint-plugin-import": "^2.29.1",
-    "jsdoc": "^4.0.2",
     "mocha": "^10.2.0",
     "prettier": "^3.1.1",
+    "prettier-plugin-jsdoc": "^1.3.0",
+    "typedoc": "^0.25.4",
     "typescript": "^5.3.3"
   }
 }

@@ -1,0 +1,6 @@
+{
+  "editor.rulers": [100],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

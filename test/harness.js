@@ -25,14 +25,11 @@ describe('parser test cases', function () {
     for (const testCaseFile of testCases) {
         if (!testCaseFile.endsWith('.sc')) continue;
         const basename = path.basename(testCaseFile, '.sc');
-        const input = readFileSync(
-            path.join(testCasesDir, testCaseFile),
-            'utf8',
+        const input = readFileSync(path.join(testCasesDir, testCaseFile), 'utf8');
+        const expected = JSON.parse(
+            readFileSync(path.join(testExpectedDir, basename + '.json'), 'utf8'),
+            reviver,
         );
-        const expected = JSON.parse(readFileSync(
-            path.join(testExpectedDir, basename + '.json'),
-            'utf8',
-        ), reviver);
         it(basename, function () {
             const opts = {errors: [], warnings: []};
             const root = parseScript(input, opts);
