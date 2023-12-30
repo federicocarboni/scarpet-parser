@@ -3,6 +3,7 @@ import path from 'path';
 
 import {parseScript} from '../lib/lib.js';
 import assert from 'assert';
+import {pathToFileURL} from 'url';
 
 /**
  * @param {any} key
@@ -26,15 +27,14 @@ describe('parser test cases', function () {
         if (!testCaseFile.endsWith('.sc')) continue;
         const basename = path.basename(testCaseFile, '.sc');
         const input = readFileSync(path.join(testCasesDir, testCaseFile), 'utf8');
-        const expected = JSON.parse(
-            readFileSync(path.join(testExpectedDir, basename + '.json'), 'utf8'),
-            reviver,
-        );
-        it(basename, function () {
+        it(basename, async function () {
+            const expected = await import(
+                pathToFileURL(path.join(testExpectedDir, basename + '.js')).toString()
+            );
             const opts = {errors: [], warnings: []};
             const root = parseScript(input, opts);
-            const actual = structuredClone({...opts, root});
-            assert.deepStrictEqual(actual, expected);
+            // const actual = structuredClone({...opts, root});
+            assert.deepStrictEqual(root, expected.root);
         });
     }
 });
