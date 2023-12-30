@@ -2,3 +2,5 @@
 # Most Scarpet repos use Python for highlighting but I had better results with
 # the JavaScript one.
 *.sc linguist-language=JavaScript linguist-vendored
+.eslintrc.cjs linguist-vendored
+.prettierrc.js linguist-vendored
