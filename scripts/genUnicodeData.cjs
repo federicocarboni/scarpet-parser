@@ -56,7 +56,7 @@ const unicodeFile = `\
 export const LETTER_CHAR_CODES = new Set(JSON.parse(${stringify(unicodeLetters)}));
 /** @type {number[]} */
 export const JAVA_WHITESPACE_CHAR_CODES = JSON.parse(${stringify(javaWhitespace)});
-/** @type {Map<number>} */
+/** @type {Map<number, number>} */
 export const DECIMAL_DIGIT_CHAR_CODES = new Map(JSON.parse(${stringify(decimalDigitMap)}));
 `;
 
