@@ -7,10 +7,9 @@
   "main": "lib/lib.js",
   "types": "types/lib.d.ts",
   "scripts": {
-    "docs": "typedoc lib/lib.js",
-    "format": "prettier --write \"**/*.{js,cjs}\"",
+    "prettier": "prettier --write \"**/*.{js,cjs}\"",
     "lint": "eslint --fix **/*.js",
-    "genUnicodeData": "node scripts/genUnicodeData.cjs",
+    "build": "node scripts/genUnicodeData.cjs && tsc",
     "install": "tsc",
     "test": "mocha",
     "coverage": "c8 npm test"
