@@ -37,10 +37,12 @@ const decimalDigitMap = unicodeDecimalDigits.map((charCode) => {
 const javaExtraSpace = [0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x1c, 0x1d, 0x1e, 0x1f];
 const javaNonSpace = [0x00a0, 0x2007, 0x202f];
 
-const javaWhitespace = Array.from(new Set([
-    ...javaExtraSpace,
-    ...unicodeWhitespace.filter((code) => !javaNonSpace.includes(code)),
-]));
+const javaWhitespace = Array.from(
+    new Set([
+        ...javaExtraSpace,
+        ...unicodeWhitespace.filter((code) => !javaNonSpace.includes(code)),
+    ]),
+);
 
 const stringify = (value) => JSON.stringify(JSON.stringify(value));
 
