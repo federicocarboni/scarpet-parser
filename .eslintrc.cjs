@@ -14,6 +14,7 @@ const config = {
         // use typescript for this
         'no-unused-vars': 'off',
         'no-undef': 'off',
+        'no-undefined': 'error',
         'dot-notation': 'error',
         eqeqeq: 'error',
         'no-caller': 'error',
