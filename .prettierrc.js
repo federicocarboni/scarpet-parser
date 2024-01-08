@@ -6,6 +6,7 @@ const config = {
     arrowParens: 'always',
     bracketSpacing: false,
     plugins: ['prettier-plugin-jsdoc'],
+    jsdocPreferCodeFences: true,
 };
 
 export default config;
