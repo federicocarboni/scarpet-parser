@@ -8,7 +8,7 @@ const config = {
         sourceType: 'module',
     },
     globals: {Set: 'readonly', Map: 'readonly'},
-    plugins: ['eslint-plugin-import'],
+    plugins: ['eslint-plugin-import', 'eslint-plugin-jsdoc'],
     rules: {
         strict: ['error', 'global'],
         // use typescript for this
