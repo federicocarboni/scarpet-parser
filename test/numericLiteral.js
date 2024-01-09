@@ -2,7 +2,7 @@ import assert from 'assert';
 
 import {DiagnosticCode} from '../lib/diagnostic.js';
 import {Tokenizer} from '../lib/Tokenizer.js';
-import {TokenType} from '../lib/Token.js';
+import {TokenType} from '../lib/token.js';
 
 describe('Decimal number literal', function () {
     it('should parse 0', function () {
