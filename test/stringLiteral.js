@@ -1,6 +1,8 @@
 import assert from 'assert';
 import {Tokenizer} from '../lib/Tokenizer.js';
-import {TokenType} from '../lib/token.js';
+import {TokenType, createToken} from '../lib/token.js';
+import {assertToken} from './driver.js';
+import {DiagnosticCode} from '../lib/diagnostic.js';
 
 describe('String literal', function () {
     it('parses simple literal', function () {
@@ -40,6 +42,33 @@ describe('String literal', function () {
         assert.strictEqual(token.end.offset, 10);
         assert.strictEqual(token.end.line, 0);
         assert.strictEqual(token.end.character, 10);
-        assert.strictEqual(token.value, '\n\t\'\\');
+        assert.strictEqual(token.value, "\n\t'\\");
+    });
+    it('diagnosticates invalid escape sequences', function () {
+        const tokenizer = new Tokenizer("'\\r'");
+        const token = tokenizer.nextToken();
+        assert.strictEqual(tokenizer.diagnostics.length, 1);
+        assert.strictEqual(tokenizer.diagnostics[0].code, DiagnosticCode.UnknownEscapeSequence);
+        assert.deepStrictEqual(tokenizer.diagnostics[0].range, {
+            start: {
+                offset: 1,
+                line: 0,
+                character: 1,
+            },
+            end: {
+                offset: 2,
+                line: 0,
+                character: 2,
+            },
+        });
+        assertToken(
+            token,
+            createToken(
+                TokenType.String,
+                {offset: 0, line: 0, character: 0},
+                {offset: 4, line: 0, character: 4},
+                '\\r',
+            ),
+        );
     });
 });
