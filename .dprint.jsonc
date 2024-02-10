@@ -3,7 +3,10 @@
     "lineWidth": 100,
     "indentWidth": 4,
     "semiColons": "always",
-    "quoteStyle": "preferDouble"
+    "quoteStyle": "preferDouble",
+    "spaceSurroundingProperties": false,
+    "importDeclaration.spaceSurroundingNamedImports": false,
+    "exportDeclaration.spaceSurroundingNamedExports": false
   },
   "excludes": ["**/node_modules"],
   "json": {

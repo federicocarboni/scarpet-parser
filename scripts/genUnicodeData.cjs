@@ -18,7 +18,7 @@ const nonSupplementary = (code) => code <= 0xffff;
 
 const unicodeLetterRanges = /** @type {{begin: number; end: number; length: number}[]} */ (require(
     unicodePkg + "/General_Category/Letter/ranges.js",
-)).filter(({ begin }) => nonSupplementary(begin));
+)).filter(({begin}) => nonSupplementary(begin));
 
 const unicodeDecimalDigits = /** @type {number[]} */ (require(
     unicodePkg + "/General_Category/Decimal_Number/code-points.js",
@@ -69,7 +69,7 @@ function fromRanges(ranges) {
 /** @type {Set<number>} */
 export const LETTER_CHAR_CODES = /* @__PURE__ */ fromRanges(/* @__PURE__ */ JSON.parse(${
     // The letter set is really large so we add it in ranges [begin, end, begin, end, ...]
-    stringify(unicodeLetterRanges.flatMap(({ begin, end }) => [begin, end]))}));
+    stringify(unicodeLetterRanges.flatMap(({begin, end}) => [begin, end]))}));
 /** @type {number[]} */
 export const JAVA_WHITESPACE_CHAR_CODES = /* @__PURE__ */ JSON.parse(${stringify(javaWhitespace)});
 /** @type {Map<number, number>} */
