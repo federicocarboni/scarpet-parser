@@ -1,6 +1,6 @@
-import assert from 'assert';
+import assert from "assert";
 
-import {Tokenizer} from '../lib/Tokenizer.js';
+import {Tokenizer} from "../lib/Tokenizer.js";
 
 /**
  * @param {string} input

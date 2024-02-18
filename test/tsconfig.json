@@ -1,11 +1,11 @@
 {
-    "extends": "../tsconfig.json",
-    "compilerOptions": {
-        "rootDir": "..",
-        "emitDeclarationOnly": false,
-        "noEmit": true,
-        "types": ["mocha", "node"],
-        "esModuleInterop": true
-    },
-    "include": ["."]
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "..",
+    "emitDeclarationOnly": false,
+    "noEmit": true,
+    "types": ["mocha", "node"],
+    "esModuleInterop": true
+  },
+  "include": ["."]
 }

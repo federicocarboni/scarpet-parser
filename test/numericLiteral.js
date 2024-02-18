@@ -1,14 +1,14 @@
-import assert from 'assert';
+import assert from "assert";
 
-import {DiagnosticCode} from '../lib/diagnostic.js';
-import {Tokenizer} from '../lib/Tokenizer.js';
-import {TokenType, createToken} from '../lib/token.js';
-import {assertFirstToken, assertToken} from './driver.js';
+import {DiagnosticCode} from "../lib/diagnostic.js";
+import {createToken, TokenType} from "../lib/token.js";
+import {Tokenizer} from "../lib/Tokenizer.js";
+import {assertFirstToken, assertToken} from "./driver.js";
 
-describe('Decimal number literal', function () {
-    it('parses 0', function () {
+describe("Decimal number literal", function() {
+    it("parses 0", function() {
         assertFirstToken(
-            '0',
+            "0",
             createToken(
                 TokenType.Number,
                 {offset: 0, line: 0, character: 0},
@@ -17,7 +17,7 @@ describe('Decimal number literal', function () {
             ),
         );
         assertFirstToken(
-            '0.00',
+            "0.00",
             createToken(
                 TokenType.Number,
                 {offset: 0, line: 0, character: 0},
@@ -26,8 +26,8 @@ describe('Decimal number literal', function () {
             ),
         );
     });
-    it('parses -12345.12345', function () {
-        const tokenizer = new Tokenizer('-12345.1234500');
+    it("parses -12345.12345", function() {
+        const tokenizer = new Tokenizer("-12345.1234500");
         assert.strictEqual(tokenizer.nextToken().type, TokenType.Sub);
         const token = tokenizer.nextToken();
         assert.strictEqual(tokenizer.diagnostics.length, 0);
@@ -41,9 +41,9 @@ describe('Decimal number literal', function () {
             ),
         );
     });
-    it('parses unicode number', function () {
+    it("parses unicode number", function() {
         assertFirstToken(
-            '０１２３４',
+            "０１２３４",
             createToken(
                 TokenType.Number,
                 {offset: 0, line: 0, character: 0},
@@ -52,9 +52,9 @@ describe('Decimal number literal', function () {
             ),
         );
     });
-    it('parses int scientific notation 123e+7', function () {
+    it("parses int scientific notation 123e+7", function() {
         assertFirstToken(
-            '123E07',
+            "123E07",
             createToken(
                 TokenType.Number,
                 {offset: 0, line: 0, character: 0},
@@ -63,7 +63,7 @@ describe('Decimal number literal', function () {
             ),
         );
         assertFirstToken(
-            '123e+07',
+            "123e+07",
             createToken(
                 TokenType.Number,
                 {offset: 0, line: 0, character: 0},
@@ -72,9 +72,9 @@ describe('Decimal number literal', function () {
             ),
         );
     });
-    it('parses float scientific notation 123e-7', function () {
+    it("parses float scientific notation 123e-7", function() {
         assertFirstToken(
-            '123e-07',
+            "123e-07",
             createToken(
                 TokenType.Number,
                 {offset: 0, line: 0, character: 0},
@@ -83,8 +83,8 @@ describe('Decimal number literal', function () {
             ),
         );
     });
-    it('diagnosticates loss of precision', function () {
-        const tokenizer = new Tokenizer('9223372036854775808');
+    it("diagnosticates loss of precision", function() {
+        const tokenizer = new Tokenizer("9223372036854775808");
         const token = tokenizer.nextToken();
         const expectedRange = {
             start: {offset: 0, line: 0, character: 0},
@@ -101,8 +101,8 @@ describe('Decimal number literal', function () {
             }),
         );
     });
-    it('diagnosticates more than one point', function () {
-        const tokenizer = new Tokenizer('123.2.2');
+    it("diagnosticates more than one point", function() {
+        const tokenizer = new Tokenizer("123.2.2");
         const token = tokenizer.nextToken();
         const expectedRange = {
             start: {offset: 0, line: 0, character: 0},
@@ -123,10 +123,10 @@ describe('Decimal number literal', function () {
     });
 });
 
-describe('Hex number literal', function () {
-    it('parses 0x0', function () {
+describe("Hex number literal", function() {
+    it("parses 0x0", function() {
         assertFirstToken(
-            '0x0',
+            "0x0",
             createToken(
                 TokenType.HexNumber,
                 {offset: 0, line: 0, character: 0},
@@ -135,9 +135,9 @@ describe('Hex number literal', function () {
             ),
         );
     });
-    it('parses 0xDeADbEeF', function () {
+    it("parses 0xDeADbEeF", function() {
         assertFirstToken(
-            '0xDeADbEeF',
+            "0xDeADbEeF",
             createToken(
                 TokenType.HexNumber,
                 {offset: 0, line: 0, character: 0},
@@ -146,8 +146,8 @@ describe('Hex number literal', function () {
             ),
         );
     });
-    it('parses negative number -0x8000000000000000', function () {
-        const tokenizer = new Tokenizer('-0x8000000000000000');
+    it("parses negative number -0x8000000000000000", function() {
+        const tokenizer = new Tokenizer("-0x8000000000000000");
         let token = tokenizer.nextToken();
         assert.strictEqual(token.type, TokenType.Sub);
         token = tokenizer.nextToken();
@@ -157,8 +157,8 @@ describe('Hex number literal', function () {
         assert.deepStrictEqual(token.start, {offset: 1, line: 0, character: 1});
         assert.deepStrictEqual(token.end, {offset: 19, line: 0, character: 19});
     });
-    it('diagnosticates loss of precision positive', function () {
-        const tokenizer = new Tokenizer('0x8000000000000000');
+    it("diagnosticates loss of precision positive", function() {
+        const tokenizer = new Tokenizer("0x8000000000000000");
         const token = tokenizer.nextToken();
         const expectedRange = {
             start: {offset: 0, line: 0, character: 0},
@@ -175,8 +175,8 @@ describe('Hex number literal', function () {
             }),
         );
     });
-    it('diagnosticates loss of precision negative', function () {
-        const tokenizer = new Tokenizer('-0x8000000000000001');
+    it("diagnosticates loss of precision negative", function() {
+        const tokenizer = new Tokenizer("-0x8000000000000001");
         let token = tokenizer.nextToken();
         assert.strictEqual(token.type, TokenType.Sub);
         token = tokenizer.nextToken();
@@ -195,8 +195,8 @@ describe('Hex number literal', function () {
             }),
         );
     });
-    it('diagnosticates missing digits 0x', function () {
-        const tokenizer = new Tokenizer('0x');
+    it("diagnosticates missing digits 0x", function() {
+        const tokenizer = new Tokenizer("0x");
         const token = tokenizer.nextToken();
         const expectedRange = {
             start: {offset: 0, line: 0, character: 0},
