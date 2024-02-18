@@ -4,8 +4,8 @@ import {createToken, TokenType} from "../lib/token.js";
 import {Tokenizer} from "../lib/Tokenizer.js";
 import {assertToken} from "./driver.js";
 
-describe("String literal", function() {
-    it("parses simple literal", function() {
+describe("String literal", function () {
+    it("parses simple literal", function () {
         const tokenizer = new Tokenizer("'hello world'");
         const token = tokenizer.nextToken();
         assert.strictEqual(tokenizer.diagnostics.length, 0);
@@ -18,7 +18,7 @@ describe("String literal", function() {
         assert.strictEqual(token.end.character, 13);
         assert.strictEqual(token.value, "hello world");
     });
-    it("parses literal with newlines", function() {
+    it("parses literal with newlines", function () {
         const tokenizer = new Tokenizer("'hello\r\nworld'");
         const token = tokenizer.nextToken();
         assert.strictEqual(tokenizer.diagnostics.length, 0);
@@ -31,7 +31,7 @@ describe("String literal", function() {
         assert.strictEqual(token.end.character, 6);
         assert.strictEqual(token.value, "hello\r\nworld");
     });
-    it("parses escapes in literal", function() {
+    it("parses escapes in literal", function () {
         const tokenizer = new Tokenizer("'\\n\\t\\'\\\\'");
         const token = tokenizer.nextToken();
         assert.strictEqual(tokenizer.diagnostics.length, 0);
@@ -44,7 +44,7 @@ describe("String literal", function() {
         assert.strictEqual(token.end.character, 10);
         assert.strictEqual(token.value, "\n\t'\\");
     });
-    it("diagnosticates invalid escape sequences", function() {
+    it("diagnosticates invalid escape sequences", function () {
         const tokenizer = new Tokenizer("'\\r'");
         const token = tokenizer.nextToken();
         assert.strictEqual(tokenizer.diagnostics.length, 1);

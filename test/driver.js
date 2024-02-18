@@ -4,7 +4,7 @@ import {Tokenizer} from "../lib/Tokenizer.js";
 
 /**
  * @param {string} input
- * @param {import('../lib/token.js').Token} expected
+ * @param {import("../lib/token.js").Token} expected
  */
 export function assertFirstToken(input, expected) {
     const tokenizer = new Tokenizer(input);
@@ -14,8 +14,8 @@ export function assertFirstToken(input, expected) {
 }
 
 /**
- * @param {import('../lib/token.js').Token} actual
- * @param {import('../lib/token.js').Token} expected
+ * @param {import("../lib/token.js").Token} actual
+ * @param {import("../lib/token.js").Token} expected
  */
 export function assertToken(actual, expected) {
     assert.strictEqual(actual.type, expected.type);

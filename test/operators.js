@@ -1,12 +1,12 @@
 import assert from "assert";
 import {Parser} from "../lib/Parser.js";
 
-describe("Operators", function() {
-    it("follows binary operators precedences", function() {
+describe("Operators", function () {
+    it("follows binary operators precedences", function () {
         const parser = new Parser("2 + 3 * 4");
         const root = parser.parse();
         assert.strictEqual(parser.diagnostics.length, 0);
-        /** @type {import('../lib/Parser.js').BinaryExpression} */
+        /** @type {import("../lib/Parser.js").BinaryExpression} */
         const expected = {
             kind: "BinaryExpression",
             operator: "+",
@@ -44,11 +44,11 @@ describe("Operators", function() {
         };
         assert.deepStrictEqual(root, expected);
     });
-    it("follows binary and unary operators precedences", function() {
+    it("follows binary and unary operators precedences", function () {
         const parser = new Parser("-a:0 + 3 * 4");
         const root = parser.parse();
         assert.strictEqual(parser.diagnostics.length, 0);
-        /** @type {import('../lib/Parser.js').BinaryExpression} */
+        /** @type {import("../lib/Parser.js").BinaryExpression} */
         const expected = {
             kind: "BinaryExpression",
             operator: "+",

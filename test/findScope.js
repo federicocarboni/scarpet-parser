@@ -3,16 +3,16 @@ import {findAllVariableReferences} from "../lib/findAllReferences.js";
 import {findScope} from "../lib/findScope.js";
 import {findReachableVariables, getNodeAt, parseScript} from "../lib/lib.js";
 
-describe("", function() {
-    it("", function() {
+describe("Find references", function () {
+    it("findReachableVariables", function () {
         const root = parseScript("f(x) -> (g = 2;x=2;x=2;null);f1(x) -> null;f2(x) -> null;");
         if (root === undefined) assert(false);
-        /** @type {import('../lib/Parser.js').FunctionDeclaration[]} */
+        /** @type {import("../lib/Parser.js").FunctionDeclaration[]} */
         const decl = [];
         findScope(root, 19, decl);
         console.log(findReachableVariables(root, 19));
     });
-    it("findAllReferences", function() {
+    it("findAllReferences", function () {
         const ast = parseScript(`\
 name = 2;
 print(name);

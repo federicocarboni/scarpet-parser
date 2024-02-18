@@ -1,11 +1,11 @@
 import assert from "assert";
 import {Parser} from "../lib/Parser.js";
 
-describe("Function expressions", function() {
-    it("parses function expressions", function() {
+describe("Function expressions", function () {
+    it("parses function expressions", function () {
         const parser = new Parser("func(,,x,,y,,)");
         const root = parser.parse();
-        /** @type {import('../lib/Parser.js').FunctionExpression} */
+        /** @type {import("../lib/Parser.js").FunctionExpression} */
         const expected = {
             kind: "FunctionExpression",
             params: [

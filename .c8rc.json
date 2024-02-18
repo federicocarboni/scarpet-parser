@@ -1,7 +1,4 @@
 {
   "include": ["lib/**"],
-  "reporter": [
-    "text",
-    "html"
-  ]
+  "reporter": ["text", "html"]
 }
