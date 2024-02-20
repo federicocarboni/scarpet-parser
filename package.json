@@ -9,7 +9,7 @@
     "format": "prettier --write \"{src,test}/**/*.js\" --write \"**/*.json\"",
     "lint": "eslint --fix **/*.js",
     "build": "node scripts/genUnicodeData.cjs && tsc",
-    "prepack": "tsc",
+    "install": "tsc",
     "test": "mocha",
     "coverage": "c8 npm test"
   },
