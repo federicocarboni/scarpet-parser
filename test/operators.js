@@ -1,5 +1,6 @@
 import assert from "assert";
 import {Parser} from "../lib/Parser.js";
+import {DiagnosticCode} from "../lib/diagnostic.js";
 
 describe("Operators", function () {
     it("follows binary operators precedences", function () {
@@ -104,5 +105,10 @@ describe("Operators", function () {
             comment: undefined,
         };
         assert.deepStrictEqual(root, expected);
+    });
+    it("disallows multiple unary operators", function () {
+        const parser = new Parser("-+2");
+        parser.parse();
+        assert.strictEqual(parser.diagnostics[0]?.code, DiagnosticCode.DoubleUnaryExpression);
     });
 });
